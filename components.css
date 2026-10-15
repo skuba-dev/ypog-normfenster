@@ -1,0 +1,49 @@
+/* YPOG Design System – Basis-Komponenten (ypog-design-system.md, Abschnitt 9).
+   In dieser App genutzt: Button (yp-btn), Hinweisbox (yp-note), visually-hidden.
+   Buttons sind immer Pillen, Hover invertiert; Primär in Rot, kein Schatten. */
+
+/* ---------- Button ---------- */
+.yp-btn {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  padding: 16px 28px 14px;
+  border: var(--rule-w) solid var(--black);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: background-color 0.4s, color 0.4s, border-color 0.4s;
+}
+.yp-btn--lg { font-size: 18px; padding: 18px 32px 16px; }
+.yp-btn--primary { background: var(--black); color: var(--white); border-color: var(--black); }
+.yp-btn--primary:hover { background: var(--white); color: var(--black); text-decoration: none; }
+.yp-btn--secondary { background: var(--surface); color: var(--ink); border-color: var(--accent); }
+.yp-btn--secondary:hover { background: var(--accent); color: var(--white); text-decoration: none; }
+.yp-btn:focus-visible { outline: var(--focus-w) solid var(--focus); outline-offset: 4px; }
+.yp-btn:disabled { background: #eeeeee; border-color: #eeeeee; color: var(--ink-disabled); cursor: not-allowed; }
+
+/* ---------- Hinweisbox ---------- */
+.yp-note {
+  font-family: var(--font-sans);
+  border: 0;
+  border-top: var(--rule-w) solid var(--accent);
+  padding: 12px;
+  box-sizing: border-box;
+  color: var(--on-tint);
+}
+.yp-note--info { background: var(--accent-tint); }
+.yp-note--ki   { background: var(--accent-tint); border-top-color: var(--brand); }
+.yp-note__label { font-size: 13px; line-height: 18px; font-weight: 900; margin-bottom: 4px; }
+.yp-note--info .yp-note__label { color: var(--accent-shade); }
+.yp-note--ki   .yp-note__label { color: var(--brand-text); }
+.yp-note__body  { font-size: 13px; line-height: 20px; font-weight: 400; color: var(--on-tint); }
+
+.yp-visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}

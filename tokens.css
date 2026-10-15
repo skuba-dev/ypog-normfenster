@@ -1,0 +1,70 @@
+/* YPOG Design System – Tokens (aus ypog-design-system.md, Abschnitte 2–6). Quelle der Wahrheit: keine losen Hex-Werte außerhalb dieser Datei.
+   Schrift: MuseoSans ist lizenzpflichtig und nicht enthalten; Ersatz Nunito Sans (Google Fonts), dann Helvetica/Arial. */
+:root {
+  /* ---------- Schriften ---------- */
+  --font-sans: "MuseoSans", "Nunito Sans", Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, Menlo, Consolas, monospace;
+
+  /* ---------- Flächen ---------- */
+  --surface: #ffffff;         /* Seite, Karten, Header */
+  --surface-field: #edf1ff;   /* Felder, ruhige Panels, Hover, Tabellenstreifen (accent-tint) */
+  --accent-tint: #edf1ff;     /* Hervorgehobene Blöcke, aktuelle Zeile */
+  --accent-tint-strong: #c8d2ff; /* Zähler, Markierungen, sekundäre Tönung */
+  --black: #000000;
+  --white: #ffffff;
+
+  /* ---------- Text / Tinte ---------- */
+  --ink: #121212;             /* Überschriften, Fließtext (18,7:1 auf Weiß) */
+  --ink-muted: #595959;       /* Sekundärtext (7,0:1 auf Weiß) */
+  --ink-disabled: #989898;    /* nur deaktivierte Controls */
+  --on-tint: #121212;         /* Text auf Tönungen */
+
+  /* ---------- Linien ---------- */
+  --rule-subtle: #d9d9d9;     /* ruhige Trenner und Hover-Rahmen */
+  --rule: #121212;            /* kräftige 2px-Linien */
+  --rule-accent: #4062e3;     /* 2px-Linie über Listenelementen */
+  --focus: #4062e3;           /* Fokusring */
+
+  /* ---------- Marke / Akzente ---------- */
+  --brand: #d22332;           /* YPOG-Rot: Logo, Primär-Buttons, Tags, Füllungen */
+  --brand-shade: #9b1928;     /* Hover Primär */
+  --brand-tint: #e87780;      /* Rot auf Schwarz */
+  --brand-text: #d22332;      /* Rot als Text auf Weiß (5,2:1) */
+  --accent: #4062e3;          /* YPOG-Blau: Linien, Feldunterkante, aktiver Zustand */
+  --accent-shade: #1b3dbb;    /* Hover Blau */
+  --accent-bright: #5a7dff;   /* nur Linien/Füllungen, nie Text auf Weiß */
+  --accent-text: #4062e3;     /* Blau als Text/Link (5,2:1) */
+
+  /* ---------- Status ---------- */
+  --danger: #dc3545;
+  --danger-tint: #f8d7da;
+  --success: #246132;         /* 7,4:1 mit Weiß */
+  --success-tint: #d4edda;
+  --warning: #ffc107;         /* Text darauf schwarz */
+  --warning-tint: #fff3cd;
+
+  /* ---------- Abstände ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --rule-w: 2px;
+  --focus-w: 3px;
+
+  /* ---------- Radien: Buttons/Pillen rund, Tags/Felder/Regeln eckig ---------- */
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 100px;
+  --radius-xl: 0;
+  --radius-pill: 100px;
+  --radius-card: 40px;
+
+  /* ---------- Schatten: keine ---------- */
+  --shadow-sm: none;
+  --shadow-card: none;
+}
